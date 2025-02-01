@@ -1,0 +1,5 @@
+streamlit
+yt-dlp
+requests
+markdown2
+weasyprint
