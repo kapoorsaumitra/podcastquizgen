@@ -89,7 +89,7 @@ def generate_markdown_notes(transcript):
 # Function to convert Markdown to a beautiful PDF
 def generate_pdf(markdown_text):
     html_content = markdown2.markdown(markdown_text)
-    pdf_file = "Podcast_Notes.pdf"
+    pdf_file = "Video_Notes.pdf"
 
     # CSS Styling
     css = """
@@ -109,9 +109,9 @@ def generate_pdf(markdown_text):
 
 # Streamlit App
 def main():
-    st.title("Podcast Notes Generator 🎙️📜")
+    st.title("YouTube Notes Generator 🎙️📜")
 
-    youtube_url = st.text_input("Enter the YouTube link of the podcast:")
+    youtube_url = st.text_input("Enter the link of the YouTube video:")
 
     if st.button("Generate Notes"):
         if not youtube_url:
